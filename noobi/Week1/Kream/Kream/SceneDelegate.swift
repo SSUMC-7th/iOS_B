@@ -14,9 +14,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        // 기본으로 설정할 LoginViewController를 작성
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = LoginViewController() // 원하는 뷰 컨트롤러 파일의 이름을 작성하면 됩니다.
+        window?.rootViewController = LoginViewController()
         window?.makeKeyAndVisible()
     }
 
