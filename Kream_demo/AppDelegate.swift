@@ -1,14 +1,15 @@
 //
 //  AppDelegate.swift
-//  UMC-iOS-Workbook
+//  Kream_demo
 //
-//  Created by 황상환 on 9/24/24.
+//  Created by 황상환 on 9/26/24.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

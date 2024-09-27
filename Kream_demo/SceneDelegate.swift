@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  UMC-iOS-Workbook
+//  Kream_demo
 //
-//  Created by 황상환 on 9/24/24.
+//  Created by 황상환 on 9/26/24.
 //
 
 import UIKit
@@ -13,10 +13,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = ViewController()
+        window?.rootViewController = LoginViewController()
         window?.makeKeyAndVisible()
     }
 
