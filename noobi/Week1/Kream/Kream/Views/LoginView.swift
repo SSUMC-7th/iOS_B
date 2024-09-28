@@ -79,8 +79,22 @@ class LoginView: UIView {
     public lazy var kakaoLoginButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("카카오로 로그인", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+
+        var config = UIButton.Configuration.plain()
+        config.title = "카카오로 로그인"
+        config.baseForegroundColor = .black
+        config.image = UIImage(named: "Path")
+        config.imagePadding = 80
+        config.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 30, bottom: 10, trailing: 120)
+        button.configuration = config
+//        button.setTitle("카카오로 로그인", for: .normal)
+//        button.setTitleColor(.black, for: .normal)
+//        if let appleLogo = UIImage(named: "Path") {
+//            button.setImage(appleLogo, for: .normal)
+//            button.imageEdgeInsets = .init(top: 0, left: 0, bottom: 0, right: 10)
+//            button.titleEdgeInsets = .init(top: 0, left: 0, bottom: 0, right: -100)
+//        }
+        
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.lightGray.cgColor
         button.layer.cornerRadius = 5
@@ -90,8 +104,16 @@ class LoginView: UIView {
     public lazy var appleLoginButton: UIButton = {
         let button = UIButton(type: .system)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Apple로 로그인", for: .normal)
-        button.setTitleColor(.black, for: .normal)
+//        button.setTitle("Apple로 로그인", for: .normal)
+//        button.setTitleColor(.black, for: .normal)
+        var config = UIButton.Configuration.plain()
+        config.title = "Apple로 로그인"
+        config.baseForegroundColor = .black
+        config.image = UIImage(named: "Vector")
+        config.imagePadding = 80
+        config.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 30, bottom: 10, trailing: 120)
+        button.configuration = config
+        
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.lightGray.cgColor
         button.layer.cornerRadius = 5
