@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B2E13DA2CAF288F0022A36C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E13D92CAF288F0022A36C /* LoginViewController.swift */; };
-		9B9184432CA70C0600B2C4F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9184422CA70C0600B2C4F7 /* AppDelegate.swift */; };
-		9B9184452CA70C0600B2C4F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9184442CA70C0600B2C4F7 /* SceneDelegate.swift */; };
-		9B91844C2CA70C0700B2C4F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B91844B2CA70C0700B2C4F7 /* Assets.xcassets */; };
-		9B91845A2CA70CAF00B2C4F7 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9184592CA70CAF00B2C4F7 /* LoginModel.swift */; };
-		9B91845C2CA70CBF00B2C4F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B91845B2CA70CBF00B2C4F7 /* LoginView.swift */; };
-		9B9184602CA70CDE00B2C4F7 /* Apple_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B91845D2CA70CDE00B2C4F7 /* Apple_Logo.png */; };
-		9B9184612CA70CDE00B2C4F7 /* Kream_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B91845E2CA70CDE00B2C4F7 /* Kream_Logo.png */; };
-		9B9184622CA70CDE00B2C4F7 /* Kakao_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B91845F2CA70CDE00B2C4F7 /* Kakao_Logo.png */; };
+		9B2E13E82CAF28D50022A36C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E13E72CAF28D50022A36C /* AppDelegate.swift */; };
+		9B2E13EA2CAF28D50022A36C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E13E92CAF28D50022A36C /* SceneDelegate.swift */; };
+		9B2E13EC2CAF28D50022A36C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2E13EB2CAF28D50022A36C /* ViewController.swift */; };
+		9B2E13EF2CAF28D50022A36C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E13ED2CAF28D50022A36C /* Main.storyboard */; };
+		9B2E13F12CAF28D60022A36C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E13F02CAF28D60022A36C /* Assets.xcassets */; };
+		9B2E13F42CAF28D60022A36C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B2E13F22CAF28D60022A36C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B2E13D92CAF288F0022A36C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../LoginViewController.swift; sourceTree = "<group>"; };
-		9B91843F2CA70C0600B2C4F7 /* Week1_Mission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week1_Mission.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B9184422CA70C0600B2C4F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B9184442CA70C0600B2C4F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B91844B2CA70C0700B2C4F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9B9184502CA70C0700B2C4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B9184592CA70CAF00B2C4F7 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		9B91845B2CA70CBF00B2C4F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		9B91845D2CA70CDE00B2C4F7 /* Apple_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple_Logo.png; sourceTree = "<group>"; };
-		9B91845E2CA70CDE00B2C4F7 /* Kream_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kream_Logo.png; sourceTree = "<group>"; };
-		9B91845F2CA70CDE00B2C4F7 /* Kakao_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kakao_Logo.png; sourceTree = "<group>"; };
+		9B2E13E42CAF28D50022A36C /* Week2_Mission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week2_Mission.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B2E13E72CAF28D50022A36C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B2E13E92CAF28D50022A36C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B2E13EB2CAF28D50022A36C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B2E13EE2CAF28D50022A36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B2E13F02CAF28D60022A36C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B2E13F32CAF28D60022A36C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B2E13F52CAF28D60022A36C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9B91843C2CA70C0600B2C4F7 /* Frameworks */ = {
+		9B2E13E12CAF28D50022A36C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,99 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B9184362CA70C0600B2C4F7 = {
+		9B2E13DB2CAF28D50022A36C = {
 			isa = PBXGroup;
 			children = (
-				9B9184412CA70C0600B2C4F7 /* Week1_Mission */,
-				9B9184402CA70C0600B2C4F7 /* Products */,
+				9B2E13E62CAF28D50022A36C /* Week2_Mission */,
+				9B2E13E52CAF28D50022A36C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9B9184402CA70C0600B2C4F7 /* Products */ = {
+		9B2E13E52CAF28D50022A36C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B91843F2CA70C0600B2C4F7 /* Week1_Mission.app */,
+				9B2E13E42CAF28D50022A36C /* Week2_Mission.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B9184412CA70C0600B2C4F7 /* Week1_Mission */ = {
+		9B2E13E62CAF28D50022A36C /* Week2_Mission */ = {
 			isa = PBXGroup;
 			children = (
-				9B9184582CA70CA100B2C4F7 /* ViewControllers */,
-				9B9184572CA70C9C00B2C4F7 /* Models */,
-				9B9184562CA70C9800B2C4F7 /* Views */,
-				9B9184422CA70C0600B2C4F7 /* AppDelegate.swift */,
-				9B9184442CA70C0600B2C4F7 /* SceneDelegate.swift */,
-				9B91844B2CA70C0700B2C4F7 /* Assets.xcassets */,
-				9B9184502CA70C0700B2C4F7 /* Info.plist */,
-				9B91845D2CA70CDE00B2C4F7 /* Apple_Logo.png */,
-				9B91845F2CA70CDE00B2C4F7 /* Kakao_Logo.png */,
-				9B91845E2CA70CDE00B2C4F7 /* Kream_Logo.png */,
+				9B2E13E72CAF28D50022A36C /* AppDelegate.swift */,
+				9B2E13E92CAF28D50022A36C /* SceneDelegate.swift */,
+				9B2E13EB2CAF28D50022A36C /* ViewController.swift */,
+				9B2E13ED2CAF28D50022A36C /* Main.storyboard */,
+				9B2E13F02CAF28D60022A36C /* Assets.xcassets */,
+				9B2E13F22CAF28D60022A36C /* LaunchScreen.storyboard */,
+				9B2E13F52CAF28D60022A36C /* Info.plist */,
 			);
-			path = Week1_Mission;
-			sourceTree = "<group>";
-		};
-		9B9184562CA70C9800B2C4F7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				9B91845B2CA70CBF00B2C4F7 /* LoginView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		9B9184572CA70C9C00B2C4F7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				9B9184592CA70CAF00B2C4F7 /* LoginModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		9B9184582CA70CA100B2C4F7 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				9B2E13D92CAF288F0022A36C /* LoginViewController.swift */,
-			);
-			path = ViewControllers;
+			path = Week2_Mission;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B91843E2CA70C0600B2C4F7 /* Week1_Mission */ = {
+		9B2E13E32CAF28D50022A36C /* Week2_Mission */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B9184532CA70C0700B2C4F7 /* Build configuration list for PBXNativeTarget "Week1_Mission" */;
+			buildConfigurationList = 9B2E13F82CAF28D60022A36C /* Build configuration list for PBXNativeTarget "Week2_Mission" */;
 			buildPhases = (
-				9B91843B2CA70C0600B2C4F7 /* Sources */,
-				9B91843C2CA70C0600B2C4F7 /* Frameworks */,
-				9B91843D2CA70C0600B2C4F7 /* Resources */,
+				9B2E13E02CAF28D50022A36C /* Sources */,
+				9B2E13E12CAF28D50022A36C /* Frameworks */,
+				9B2E13E22CAF28D50022A36C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Week1_Mission;
-			productName = Week1_Mission;
-			productReference = 9B91843F2CA70C0600B2C4F7 /* Week1_Mission.app */;
+			name = Week2_Mission;
+			productName = Week2_Mission;
+			productReference = 9B2E13E42CAF28D50022A36C /* Week2_Mission.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9B9184372CA70C0600B2C4F7 /* Project object */ = {
+		9B2E13DC2CAF28D50022A36C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					9B91843E2CA70C0600B2C4F7 = {
+					9B2E13E32CAF28D50022A36C = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = 9B91843A2CA70C0600B2C4F7 /* Build configuration list for PBXProject "Week1_Mission" */;
+			buildConfigurationList = 9B2E13DF2CAF28D50022A36C /* Build configuration list for PBXProject "Week2_Mission" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,47 +110,63 @@
 				en,
 				Base,
 			);
-			mainGroup = 9B9184362CA70C0600B2C4F7;
-			productRefGroup = 9B9184402CA70C0600B2C4F7 /* Products */;
+			mainGroup = 9B2E13DB2CAF28D50022A36C;
+			productRefGroup = 9B2E13E52CAF28D50022A36C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B91843E2CA70C0600B2C4F7 /* Week1_Mission */,
+				9B2E13E32CAF28D50022A36C /* Week2_Mission */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9B91843D2CA70C0600B2C4F7 /* Resources */ = {
+		9B2E13E22CAF28D50022A36C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B9184622CA70CDE00B2C4F7 /* Kakao_Logo.png in Resources */,
-				9B91844C2CA70C0700B2C4F7 /* Assets.xcassets in Resources */,
-				9B9184602CA70CDE00B2C4F7 /* Apple_Logo.png in Resources */,
-				9B9184612CA70CDE00B2C4F7 /* Kream_Logo.png in Resources */,
+				9B2E13F42CAF28D60022A36C /* LaunchScreen.storyboard in Resources */,
+				9B2E13F12CAF28D60022A36C /* Assets.xcassets in Resources */,
+				9B2E13EF2CAF28D50022A36C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9B91843B2CA70C0600B2C4F7 /* Sources */ = {
+		9B2E13E02CAF28D50022A36C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B91845A2CA70CAF00B2C4F7 /* LoginModel.swift in Sources */,
-				9B9184432CA70C0600B2C4F7 /* AppDelegate.swift in Sources */,
-				9B91845C2CA70CBF00B2C4F7 /* LoginView.swift in Sources */,
-				9B2E13DA2CAF288F0022A36C /* LoginViewController.swift in Sources */,
-				9B9184452CA70C0600B2C4F7 /* SceneDelegate.swift in Sources */,
+				9B2E13EC2CAF28D50022A36C /* ViewController.swift in Sources */,
+				9B2E13E82CAF28D50022A36C /* AppDelegate.swift in Sources */,
+				9B2E13EA2CAF28D50022A36C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		9B2E13ED2CAF28D50022A36C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B2E13EE2CAF28D50022A36C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B2E13F22CAF28D60022A36C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B2E13F32CAF28D60022A36C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		9B9184512CA70C0700B2C4F7 /* Debug */ = {
+		9B2E13F62CAF28D60022A36C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		9B9184522CA70C0700B2C4F7 /* Release */ = {
+		9B2E13F72CAF28D60022A36C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +285,7 @@
 			};
 			name = Release;
 		};
-		9B9184542CA70C0700B2C4F7 /* Debug */ = {
+		9B2E13F92CAF28D60022A36C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -311,9 +294,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M5SX67S4MM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Week1_Mission/Info.plist;
+				INFOPLIST_FILE = Week2_Mission/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,7 +305,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dlwnsgurz.Week1-Mission";
+				PRODUCT_BUNDLE_IDENTIFIER = "dlwnsgurz.Week2-Mission";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,7 +313,7 @@
 			};
 			name = Debug;
 		};
-		9B9184552CA70C0700B2C4F7 /* Release */ = {
+		9B2E13FA2CAF28D60022A36C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -338,9 +322,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M5SX67S4MM;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Week1_Mission/Info.plist;
+				INFOPLIST_FILE = Week2_Mission/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -348,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dlwnsgurz.Week1-Mission";
+				PRODUCT_BUNDLE_IDENTIFIER = "dlwnsgurz.Week2-Mission";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -359,25 +344,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B91843A2CA70C0600B2C4F7 /* Build configuration list for PBXProject "Week1_Mission" */ = {
+		9B2E13DF2CAF28D50022A36C /* Build configuration list for PBXProject "Week2_Mission" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B9184512CA70C0700B2C4F7 /* Debug */,
-				9B9184522CA70C0700B2C4F7 /* Release */,
+				9B2E13F62CAF28D60022A36C /* Debug */,
+				9B2E13F72CAF28D60022A36C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B9184532CA70C0700B2C4F7 /* Build configuration list for PBXNativeTarget "Week1_Mission" */ = {
+		9B2E13F82CAF28D60022A36C /* Build configuration list for PBXNativeTarget "Week2_Mission" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B9184542CA70C0700B2C4F7 /* Debug */,
-				9B9184552CA70C0700B2C4F7 /* Release */,
+				9B2E13F92CAF28D60022A36C /* Debug */,
+				9B2E13FA2CAF28D60022A36C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9B9184372CA70C0600B2C4F7 /* Project object */;
+	rootObject = 9B2E13DC2CAF28D50022A36C /* Project object */;
 }
