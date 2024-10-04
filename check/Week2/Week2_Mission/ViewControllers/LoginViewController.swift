@@ -20,13 +20,18 @@ class LoginViewController: UIViewController {
         loginView.kakaoLoginButton.addTarget(self, action: #selector(kakaoLoginButtonTapped), for: .touchUpInside)
         loginView.appleLoginButton.addTarget(self, action: #selector(appleLoginButtonTapped), for: .touchUpInside)
         
-
         self.view = loginView
     }
     
     // MARK: - 버튼 터치 이벤트 핸들러
     @objc func loginButtonTapped(){
         print("[로그인] 누름")
+        
+        let mainTabBarVC = MainTabBarController()
+        mainTabBarVC.modalPresentationStyle = .fullScreen
+        
+        present(mainTabBarVC, animated: true)
+    
     }
     
     @objc func kakaoLoginButtonTapped(){
@@ -49,4 +54,3 @@ class LoginViewController: UIViewController {
     }
 
 }
-
