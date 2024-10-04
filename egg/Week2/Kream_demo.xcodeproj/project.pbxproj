@@ -13,6 +13,16 @@
 		0793A43C2CA543BC0044E622 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4362CA543BC0044E622 /* LoginViewController.swift */; };
 		0793A4412CA545D60044E622 /* LoginModel.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4402CA545D60044E622 /* LoginModel.swift .swift */; };
 		0793A4472CA5468A0044E622 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4462CA5468A0044E622 /* LoginView.swift */; };
+		07D454902CAEE128009FD782 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D4548F2CAEE128009FD782 /* BaseViewController.swift */; };
+		07D454922CAEE4C2009FD782 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454912CAEE4C2009FD782 /* HomeViewController.swift */; };
+		07D454942CAEE4DC009FD782 /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454932CAEE4DC009FD782 /* StyleViewController.swift */; };
+		07D454962CAEE533009FD782 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454952CAEE533009FD782 /* ShopViewController.swift */; };
+		07D454982CAEE540009FD782 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454972CAEE540009FD782 /* SavedViewController.swift */; };
+		07D4549A2CAEE549009FD782 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454992CAEE549009FD782 /* MyViewController.swift */; };
+		07D4549D2CAEE666009FD782 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 07D4549C2CAEE666009FD782 /* SnapKit */; };
+		07D4549F2CAEF428009FD782 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D4549E2CAEF428009FD782 /* MyView.swift */; };
+		07D454A92CAF037D009FD782 /* profileManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454A82CAF037D009FD782 /* profileManageViewController.swift */; };
+		07D454AB2CAF0387009FD782 /* ProfileManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454AA2CAF0387009FD782 /* ProfileManageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,15 @@
 		0793A4362CA543BC0044E622 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0793A4402CA545D60044E622 /* LoginModel.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginModel.swift .swift"; sourceTree = "<group>"; };
 		0793A4462CA5468A0044E622 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		07D4548F2CAEE128009FD782 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		07D454912CAEE4C2009FD782 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		07D454932CAEE4DC009FD782 /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
+		07D454952CAEE533009FD782 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		07D454972CAEE540009FD782 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		07D454992CAEE549009FD782 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		07D4549E2CAEF428009FD782 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		07D454A82CAF037D009FD782 /* profileManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileManageViewController.swift; sourceTree = "<group>"; };
+		07D454AA2CAF0387009FD782 /* ProfileManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D4549D2CAEE666009FD782 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				0793A4462CA5468A0044E622 /* LoginView.swift */,
+				07D4549E2CAEF428009FD782 /* MyView.swift */,
+				07D454AA2CAF0387009FD782 /* ProfileManageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -87,6 +109,13 @@
 			isa = PBXGroup;
 			children = (
 				0793A4362CA543BC0044E622 /* LoginViewController.swift */,
+				07D4548F2CAEE128009FD782 /* BaseViewController.swift */,
+				07D454912CAEE4C2009FD782 /* HomeViewController.swift */,
+				07D454932CAEE4DC009FD782 /* StyleViewController.swift */,
+				07D454952CAEE533009FD782 /* ShopViewController.swift */,
+				07D454972CAEE540009FD782 /* SavedViewController.swift */,
+				07D454992CAEE549009FD782 /* MyViewController.swift */,
+				07D454A82CAF037D009FD782 /* profileManageViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -108,6 +137,7 @@
 			);
 			name = Kream_demo;
 			packageProductDependencies = (
+				07D4549C2CAEE666009FD782 /* SnapKit */,
 			);
 			productName = Kream_demo;
 			productReference = 078CC6E82CA54216003C83D8 /* Kream_demo.app */;
@@ -137,6 +167,9 @@
 			);
 			mainGroup = 078CC6DF2CA54216003C83D8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				07D4549B2CAEE666009FD782 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 078CC6E92CA54216003C83D8 /* Products */;
 			projectDirPath = "";
@@ -163,11 +196,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D4549F2CAEF428009FD782 /* MyView.swift in Sources */,
 				0793A43A2CA543BC0044E622 /* AppDelegate.swift in Sources */,
 				0793A43B2CA543BC0044E622 /* SceneDelegate.swift in Sources */,
+				07D454AB2CAF0387009FD782 /* ProfileManageView.swift in Sources */,
+				07D454962CAEE533009FD782 /* ShopViewController.swift in Sources */,
 				0793A43C2CA543BC0044E622 /* LoginViewController.swift in Sources */,
 				0793A4472CA5468A0044E622 /* LoginView.swift in Sources */,
+				07D454A92CAF037D009FD782 /* profileManageViewController.swift in Sources */,
+				07D454942CAEE4DC009FD782 /* StyleViewController.swift in Sources */,
+				07D4549A2CAEE549009FD782 /* MyViewController.swift in Sources */,
 				0793A4412CA545D60044E622 /* LoginModel.swift .swift in Sources */,
+				07D454922CAEE4C2009FD782 /* HomeViewController.swift in Sources */,
+				07D454982CAEE540009FD782 /* SavedViewController.swift in Sources */,
+				07D454902CAEE128009FD782 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +235,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.soongsil.cs.20213583.Kream-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -369,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07D4549B2CAEE666009FD782 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07D4549C2CAEE666009FD782 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07D4549B2CAEE666009FD782 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 078CC6E02CA54216003C83D8 /* Project object */;
 }

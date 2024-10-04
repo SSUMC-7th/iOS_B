@@ -8,18 +8,29 @@
 import UIKit
 
 class LoginView: UIView {
+    
+    // 버튼 액션을 전달하기 위한 클로저..
+    var onLoginButtonTapped: (() -> Void)?
 
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .white
         self.addComponents()
+        
+        loginButton.addTarget(self, action: #selector(loginButtonAction), for: .touchUpInside)
+
     }
     
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    @objc private func loginButtonAction() {
+            // 버튼 클릭 시 클로저 실행
+            onLoginButtonTapped?()
+        }
     
     
     private func addComponents() {
@@ -52,7 +63,9 @@ class LoginView: UIView {
     
     private let emailTextField: UITextField = {
         let textField = UITextField()
-        textField.placeholder = "   예) kream@kream.co.kr"
+        textField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: textField.frame.height))
+        textField.leftViewMode = .always
+        textField.placeholder = "예) kream@kream.co.kr"
         textField.font = UIFont.systemFont(ofSize: 12)
         textField.borderStyle = .roundedRect
         textField.layer.cornerRadius = 15
@@ -70,15 +83,17 @@ class LoginView: UIView {
     }()
     
     private let passwordTextField: UITextField = {
-        let textField = UITextField()
-        textField.placeholder = "   비밀번호를 입력해주세요"
-        textField.font = UIFont.systemFont(ofSize: 12)
-        textField.borderStyle = .roundedRect
-        textField.layer.cornerRadius = 15
-        textField.layer.borderWidth = 1
-        textField.layer.borderColor = UIColor(red: 162/255.0, green: 162/255.0, blue: 162/255.0, alpha: 1.0).cgColor
-        textField.layer.masksToBounds = true
-        return textField
+        let passwordTextField = UITextField()
+        passwordTextField.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: passwordTextField.frame.height))
+        passwordTextField.leftViewMode = .always
+        passwordTextField.placeholder = "비밀번호를 입력해주세요"
+        passwordTextField.font = UIFont.systemFont(ofSize: 12)
+        passwordTextField.borderStyle = .roundedRect
+        passwordTextField.layer.cornerRadius = 15
+        passwordTextField.layer.borderWidth = 1
+        passwordTextField.layer.borderColor = UIColor(red: 162/255.0, green: 162/255.0, blue: 162/255.0, alpha: 1.0).cgColor
+        passwordTextField.layer.masksToBounds = true
+        return passwordTextField
     }()
     
     private let loginButton: UIButton = {
@@ -213,4 +228,8 @@ class LoginView: UIView {
         
     }
 
+}
+
+#Preview {
+    LoginView()
 }

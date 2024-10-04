@@ -11,13 +11,21 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         let loginView = LoginView(frame: self.view.bounds)
         self.view.addSubview(loginView)
-
+     
+        loginView.onLoginButtonTapped = { [weak self] in
+            
+            let baseVC = BaseViewController()
+            
+            baseVC.modalPresentationStyle = .fullScreen
+            self?.present(baseVC, animated: true, completion: nil)
+        }
     }
-
-
+    
 }
 
+#Preview {
+    LoginViewController()
+}

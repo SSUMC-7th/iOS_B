@@ -14,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        #if DEBUG
+        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle")?.load()
+        #endif
+        
         return true
     }
 
@@ -34,3 +38,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+#if DEBUG
+extension UIViewController {
+    @objc func injected() {
+        print("Injection successful in \(self)")
+        self.view.setNeedsLayout()
+        self.view.layoutIfNeeded()
+    }
+}
+#endif
