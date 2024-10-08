@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0730A59E2CB3FD2E0011809F /* SavedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730A59D2CB3FD2E0011809F /* SavedModels.swift */; };
+		0730A5A02CB400440011809F /* SavedItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730A59F2CB400440011809F /* SavedItemsCell.swift */; };
+		0730A5A22CB401ED0011809F /* SavedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730A5A12CB401ED0011809F /* SavedImageView.swift */; };
+		0793A4382CA543BC0044E622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0793A4332CA543BC0044E622 /* Assets.xcassets */; };
+		0793A43A2CA543BC0044E622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4322CA543BC0044E622 /* AppDelegate.swift */; };
+		0793A43B2CA543BC0044E622 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4352CA543BC0044E622 /* SceneDelegate.swift */; };
+		0793A43C2CA543BC0044E622 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4362CA543BC0044E622 /* LoginViewController.swift */; };
+		0793A4412CA545D60044E622 /* LoginModel.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4402CA545D60044E622 /* LoginModel.swift .swift */; };
+		0793A4472CA5468A0044E622 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4462CA5468A0044E622 /* LoginView.swift */; };
+		07D454902CAEE128009FD782 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D4548F2CAEE128009FD782 /* BaseViewController.swift */; };
+		07D454922CAEE4C2009FD782 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454912CAEE4C2009FD782 /* HomeViewController.swift */; };
+		07D454942CAEE4DC009FD782 /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454932CAEE4DC009FD782 /* StyleViewController.swift */; };
+		07D454962CAEE533009FD782 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454952CAEE533009FD782 /* ShopViewController.swift */; };
+		07D454982CAEE540009FD782 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454972CAEE540009FD782 /* SavedViewController.swift */; };
+		07D4549A2CAEE549009FD782 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454992CAEE549009FD782 /* MyViewController.swift */; };
+		07D4549D2CAEE666009FD782 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 07D4549C2CAEE666009FD782 /* SnapKit */; };
+		07D4549F2CAEF428009FD782 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D4549E2CAEF428009FD782 /* MyView.swift */; };
+		07D454A92CAF037D009FD782 /* profileManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454A82CAF037D009FD782 /* profileManageViewController.swift */; };
+		07D454AB2CAF0387009FD782 /* ProfileManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454AA2CAF0387009FD782 /* ProfileManageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0730A59D2CB3FD2E0011809F /* SavedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedModels.swift; sourceTree = "<group>"; };
+		0730A59F2CB400440011809F /* SavedItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemsCell.swift; sourceTree = "<group>"; };
+		0730A5A12CB401ED0011809F /* SavedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedImageView.swift; sourceTree = "<group>"; };
+		078CC6E82CA54216003C83D8 /* Kream_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kream_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0793A4322CA543BC0044E622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0793A4332CA543BC0044E622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0793A4342CA543BC0044E622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0793A4352CA543BC0044E622 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0793A4362CA543BC0044E622 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0793A4402CA545D60044E622 /* LoginModel.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginModel.swift .swift"; sourceTree = "<group>"; };
+		0793A4462CA5468A0044E622 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		07D4548F2CAEE128009FD782 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		07D454912CAEE4C2009FD782 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		07D454932CAEE4DC009FD782 /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
+		07D454952CAEE533009FD782 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		07D454972CAEE540009FD782 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		07D454992CAEE549009FD782 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		07D4549E2CAEF428009FD782 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		07D454A82CAF037D009FD782 /* profileManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileManageViewController.swift; sourceTree = "<group>"; };
+		07D454AA2CAF0387009FD782 /* ProfileManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		078CC6E52CA54216003C83D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D4549D2CAEE666009FD782 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0730A59C2CB3FC850011809F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0730A59F2CB400440011809F /* SavedItemsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		078CC6DF2CA54216003C83D8 = {
+			isa = PBXGroup;
+			children = (
+				0793A4372CA543BC0044E622 /* Kream_demo */,
+				078CC6E92CA54216003C83D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		078CC6E92CA54216003C83D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				078CC6E82CA54216003C83D8 /* Kream_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0793A4372CA543BC0044E622 /* Kream_demo */ = {
+			isa = PBXGroup;
+			children = (
+				0730A59C2CB3FC850011809F /* Cells */,
+				0793A43D2CA545980044E622 /* Models */,
+				0793A43E2CA545C10044E622 /* Views */,
+				0793A43F2CA545C50044E622 /* ViewControllers */,
+				0793A4322CA543BC0044E622 /* AppDelegate.swift */,
+				0793A4332CA543BC0044E622 /* Assets.xcassets */,
+				0793A4342CA543BC0044E622 /* Info.plist */,
+				0793A4352CA543BC0044E622 /* SceneDelegate.swift */,
+			);
+			path = Kream_demo;
+			sourceTree = "<group>";
+		};
+		0793A43D2CA545980044E622 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0793A4402CA545D60044E622 /* LoginModel.swift .swift */,
+				0730A59D2CB3FD2E0011809F /* SavedModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0793A43E2CA545C10044E622 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0793A4462CA5468A0044E622 /* LoginView.swift */,
+				07D4549E2CAEF428009FD782 /* MyView.swift */,
+				07D454AA2CAF0387009FD782 /* ProfileManageView.swift */,
+				0730A5A12CB401ED0011809F /* SavedImageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0793A43F2CA545C50044E622 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0793A4362CA543BC0044E622 /* LoginViewController.swift */,
+				07D4548F2CAEE128009FD782 /* BaseViewController.swift */,
+				07D454912CAEE4C2009FD782 /* HomeViewController.swift */,
+				07D454932CAEE4DC009FD782 /* StyleViewController.swift */,
+				07D454952CAEE533009FD782 /* ShopViewController.swift */,
+				07D454972CAEE540009FD782 /* SavedViewController.swift */,
+				07D454992CAEE549009FD782 /* MyViewController.swift */,
+				07D454A82CAF037D009FD782 /* profileManageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		078CC6E72CA54216003C83D8 /* Kream_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078CC6FB2CA54218003C83D8 /* Build configuration list for PBXNativeTarget "Kream_demo" */;
+			buildPhases = (
+				078CC6E42CA54216003C83D8 /* Sources */,
+				078CC6E52CA54216003C83D8 /* Frameworks */,
+				078CC6E62CA54216003C83D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kream_demo;
+			packageProductDependencies = (
+				07D4549C2CAEE666009FD782 /* SnapKit */,
+			);
+			productName = Kream_demo;
+			productReference = 078CC6E82CA54216003C83D8 /* Kream_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		078CC6E02CA54216003C83D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					078CC6E72CA54216003C83D8 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 078CC6E32CA54216003C83D8 /* Build configuration list for PBXProject "Kream_demo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 078CC6DF2CA54216003C83D8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				07D4549B2CAEE666009FD782 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 078CC6E92CA54216003C83D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				078CC6E72CA54216003C83D8 /* Kream_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		078CC6E62CA54216003C83D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0793A4382CA543BC0044E622 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		078CC6E42CA54216003C83D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D4549F2CAEF428009FD782 /* MyView.swift in Sources */,
+				0793A43A2CA543BC0044E622 /* AppDelegate.swift in Sources */,
+				0730A5A22CB401ED0011809F /* SavedImageView.swift in Sources */,
+				0793A43B2CA543BC0044E622 /* SceneDelegate.swift in Sources */,
+				07D454AB2CAF0387009FD782 /* ProfileManageView.swift in Sources */,
+				0730A5A02CB400440011809F /* SavedItemsCell.swift in Sources */,
+				07D454962CAEE533009FD782 /* ShopViewController.swift in Sources */,
+				0793A43C2CA543BC0044E622 /* LoginViewController.swift in Sources */,
+				0793A4472CA5468A0044E622 /* LoginView.swift in Sources */,
+				07D454A92CAF037D009FD782 /* profileManageViewController.swift in Sources */,
+				07D454942CAEE4DC009FD782 /* StyleViewController.swift in Sources */,
+				07D4549A2CAEE549009FD782 /* MyViewController.swift in Sources */,
+				0730A59E2CB3FD2E0011809F /* SavedModels.swift in Sources */,
+				0793A4412CA545D60044E622 /* LoginModel.swift .swift in Sources */,
+				07D454922CAEE4C2009FD782 /* HomeViewController.swift in Sources */,
+				07D454982CAEE540009FD782 /* SavedViewController.swift in Sources */,
+				07D454902CAEE128009FD782 /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		078CC6FC2CA54218003C83D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBVZV8T99P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kream_demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Xlinker",
+					"-interposable",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.soongsil.cs.20213583.Kream-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		078CC6FD2CA54218003C83D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBVZV8T99P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kream_demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.soongsil.cs.20213583.Kream-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		078CC6FE2CA54218003C83D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		078CC6FF2CA54218003C83D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		078CC6E32CA54216003C83D8 /* Build configuration list for PBXProject "Kream_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078CC6FE2CA54218003C83D8 /* Debug */,
+				078CC6FF2CA54218003C83D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078CC6FB2CA54218003C83D8 /* Build configuration list for PBXNativeTarget "Kream_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078CC6FC2CA54218003C83D8 /* Debug */,
+				078CC6FD2CA54218003C83D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07D4549B2CAEE666009FD782 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07D4549C2CAEE666009FD782 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07D4549B2CAEE666009FD782 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 078CC6E02CA54216003C83D8 /* Project object */;
+}

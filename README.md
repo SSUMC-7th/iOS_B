@@ -7,7 +7,7 @@ SSUMC 7기 iOS 스터디 B조
 | 황상환 | 이준혁 | 한금준 |
 | :---------:|:----------:|:----------:|
 | 에그 | 체크 | 누비 |
-| [Hrepay](https://github.com/Hrepay) | [dlwnsgurz](https://github.com/dlwnsgurz) | [gksrmawns0925](https://github.com/gksrmawns0925) |
+| [Hrepay](https://github.com/Hrepay) | [dlwnsgurz](https://github.com/dlwnsgurz) | [Funital](https://github.com/Funital) |
 
 ## branch 컨벤션 (규칙)
 
