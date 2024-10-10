@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "baroping.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
