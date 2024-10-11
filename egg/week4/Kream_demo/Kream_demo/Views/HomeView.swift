@@ -101,8 +101,15 @@ class HomeView: UIView {
         super.init(frame: frame)
         backgroundColor = .white
         setupView()
+        
+        // 기본 선택된 세그먼트의 밑줄을 설정 (index 0)
+        DispatchQueue.main.async {
+            self.segmentChanged(self.segmentedControl)
+        }
+        
         segmentedControl.addTarget(self, action: #selector(segmentChanged(_:)), for: .valueChanged)
     }
+
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -143,7 +150,7 @@ class HomeView: UIView {
         // 밑줄
         let segmentWidth = UIScreen.main.bounds.width / CGFloat(segmentedControl.numberOfSegments)
         underlineView.snp.makeConstraints {
-            $0.top.equalTo(segmentedControl.snp.bottom).offset(3)
+            $0.top.equalTo(segmentedControl.snp.bottom).offset(6)
             $0.width.equalTo(segmentWidth)
             $0.height.equalTo(2)
             $0.leading.equalTo(segmentedControl.snp.leading)
@@ -169,20 +176,31 @@ class HomeView: UIView {
         }
     }
 
+    // 밑줄 커스텀
     @objc func segmentChanged(_ sender: UISegmentedControl) {
         let index = sender.selectedSegmentIndex
-        let segmentWidth = sender.bounds.width / CGFloat(sender.numberOfSegments)
+        let selectedSegmentFrame = sender.subviews[index].frame
+
+        // 밑줄 숨기기
+        underlineView.isHidden = true
         
-        UIView.animate(withDuration: 0.3) {
-            
+        UIView.animate(withDuration: 0.3, animations: {
             self.underlineView.snp.updateConstraints {
-                $0.width.equalTo(segmentWidth)
-                $0.leading.equalTo(sender.snp.leading).offset(segmentWidth * CGFloat(index))
+                // 세그먼트 width의 60%
+                let underlineWidth = selectedSegmentFrame.width * 0.6
+                $0.width.equalTo(underlineWidth)
+                
+                // 가운데 정렬 -> (세그먼트 전체 너비 - 밑줄 너비) / 2
+                let leadingOffset = selectedSegmentFrame.origin.x + (selectedSegmentFrame.width - underlineWidth) / 2
+                $0.leading.equalTo(sender.snp.leading).offset(leadingOffset)
             }
             self.layoutIfNeeded()
+        }) { _ in
+            // 애니메이션 완료 후 밑줄 보이기
+            self.underlineView.isHidden = false
         }
-        
-        
+
+        // 추천(인덱스 0)일 때는 segmentedImageView를 보여주고, 나머지일 때는 emptyView를 보여줌
         if index == 0 {
             segmentedImageView.isHidden = false
             emptyView.isHidden = true
