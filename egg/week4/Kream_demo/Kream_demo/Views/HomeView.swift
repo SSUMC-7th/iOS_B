@@ -180,11 +180,8 @@ class HomeView: UIView {
     @objc func segmentChanged(_ sender: UISegmentedControl) {
         let index = sender.selectedSegmentIndex
         let selectedSegmentFrame = sender.subviews[index].frame
-
-        // 밑줄 숨기기
-        underlineView.isHidden = true
         
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 0.3) {
             self.underlineView.snp.updateConstraints {
                 // 세그먼트 width의 60%
                 let underlineWidth = selectedSegmentFrame.width * 0.6
@@ -195,12 +192,9 @@ class HomeView: UIView {
                 $0.leading.equalTo(sender.snp.leading).offset(leadingOffset)
             }
             self.layoutIfNeeded()
-        }) { _ in
-            // 애니메이션 완료 후 밑줄 보이기
-            self.underlineView.isHidden = false
         }
-
-        // 추천(인덱스 0)일 때는 segmentedImageView를 보여주고, 나머지일 때는 emptyView를 보여줌
+        
+        // 각 세그먼트 뷰 설정
         if index == 0 {
             segmentedImageView.isHidden = false
             emptyView.isHidden = true
@@ -209,4 +203,9 @@ class HomeView: UIView {
             emptyView.isHidden = false
         }
     }
+
+
+
+
+
 }
