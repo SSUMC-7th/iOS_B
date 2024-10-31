@@ -61,7 +61,7 @@ class SavedView: UIView{
         }
         tableView.snp.makeConstraints {
             $0.top.equalTo(subtitle.snp.bottom).offset(14)
-            $0.left.right.bottom.equalToSuperview()
+            $0.left.right.bottom.equalTo(safeAreaLayoutGuide)
         }
     }
     
@@ -69,5 +69,4 @@ class SavedView: UIView{
     public func updateSubtitle(with count: Int) {
         subtitle.text = "전체 \(count)개"
     }
-
 }

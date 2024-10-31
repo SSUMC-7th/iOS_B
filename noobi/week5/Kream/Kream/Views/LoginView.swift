@@ -120,14 +120,16 @@ class LoginView: UIView {
     }()
         
     private func setupView() {
-        self.addSubview(logoImageView)
-        self.addSubview(emailLabel)
-        self.addSubview(emailTextField)
-        self.addSubview(passwordLabel)
-        self.addSubview(passwordTextField)
-        self.addSubview(loginButton)
-        self.addSubview(kakaoLoginButton)
-        self.addSubview(appleLoginButton)
+        addSubviews(
+            logoImageView,
+            emailLabel,
+            emailTextField,
+            passwordLabel,
+            passwordTextField,
+            loginButton,
+            kakaoLoginButton,
+            appleLoginButton
+        )
         
         logoImageView.snp.makeConstraints { make in
             make.top.equalTo(self).offset(120)
@@ -182,5 +184,11 @@ class LoginView: UIView {
             make.trailing.equalTo(self).inset(20)
             make.height.equalTo(50)
         }
+    }
+}
+
+extension UIView {
+    func addSubviews(_ views: UIView...) {
+        views.forEach { self.addSubview($0) }
     }
 }

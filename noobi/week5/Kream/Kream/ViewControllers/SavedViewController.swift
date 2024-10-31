@@ -19,7 +19,7 @@ class SavedViewController: UIViewController {
     private lazy var savedView: SavedView = {
         let view = SavedView()
         view.tableView.dataSource = self
-        view.tableView.dataSource = self
+        view.tableView.delegate = self
         return view
     }()
 }
@@ -33,7 +33,7 @@ extension SavedViewController: UITableViewDataSource, UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SavedCell.identifier, for: indexPath) as? SavedCell else { return UITableViewCell()
         }
         
-        cell.configure(model: data[indexPath.row])
+        cell.configure(with: data[indexPath.row])
         return cell
     }
 }

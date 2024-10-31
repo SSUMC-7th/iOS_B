@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// 
 class ChallengeCollectionViewCell: UICollectionViewCell {
     static let identifier = "ChallengeCollectionViewCell"
     
