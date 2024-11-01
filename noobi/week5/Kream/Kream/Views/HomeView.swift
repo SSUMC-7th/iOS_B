@@ -9,13 +9,17 @@ import UIKit
 import Then
 import SnapKit
 
+///
 class HomeView: UIView {
+    
+    /// 스크롤 가능한 영역을 제공하는 UIScrollView와 그 내부 콘텐츠 뷰
     let scrollView = UIScrollView()
     let contentView = UIView()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
+        
         setupView()
     }
     
@@ -23,6 +27,7 @@ class HomeView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// 수직 방향의 스택 뷰로 구성,  각 구성 요소를 세로로 정렬
     let stackView = UIStackView().then {
         $0.axis = .vertical
         $0.spacing = 10
@@ -30,6 +35,7 @@ class HomeView: UIView {
         $0.distribution = .fill
     }
     
+    /// 수평 방향의 상단 스택 뷰, 검색창과 알림 버튼을 포함
     let topStackView = UIStackView().then {
         $0.axis = .horizontal
         $0.spacing = 0
@@ -37,6 +43,7 @@ class HomeView: UIView {
         $0.distribution = .fill
     }
     
+    /// 검색창 텍스트 필드
     let searchTextField = UITextField().then {
         $0.placeholder = "브랜드, 상품, 프로필, 태그 등"
         $0.backgroundColor = .lightGray
@@ -48,7 +55,7 @@ class HomeView: UIView {
         $0.leftView = paddingView
         $0.leftViewMode = .always
     }
-    
+    /// 알림 버튼
     let alarmButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(systemName: "bell"), for: .normal)
@@ -56,6 +63,7 @@ class HomeView: UIView {
         return button
     }()
     
+    /// 세그먼트 컨트롤, 다양한 카테고리 표시
     let segmentControl = UISegmentedControl(items: ["추천", "랭킹", "발매정보", "럭셔리", "남성", "여성"]).then {
         $0.selectedSegmentIndex = 0
         $0.setTitleTextAttributes(
@@ -69,6 +77,7 @@ class HomeView: UIView {
         $0.apportionsSegmentWidthsByContent = true
     }
     
+    /// 구분선
     private let dividedLine = UIView().then {
         $0.backgroundColor = .black
     }
@@ -78,6 +87,7 @@ class HomeView: UIView {
         $0.image = UIImage(named: "광고이미지")
     }
     
+    /// 1/3 부분 컬렉션 뷰
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout().then{
         
         let numberOfItemsPerRow: CGFloat = 6
@@ -95,6 +105,8 @@ class HomeView: UIView {
         $0.isScrollEnabled = false
         $0.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: HomeCollectionViewCell.identifier)
     }
+    
+    // ------------------------------------------------------------------------------------------------------------------------
     
     // Just Dropped 타이틀과 설명 레이블
     let justDroppedTitleLabel = UILabel().then {
@@ -118,6 +130,8 @@ class HomeView: UIView {
         make.showsHorizontalScrollIndicator = false
         make.register(JustDroppedCollectionViewCell.self, forCellWithReuseIdentifier: JustDroppedCollectionViewCell.identifier)
     }
+    
+    // ------------------------------------------------------------------------------------------------------------------------
     
     // 제목 레이블 생성
     let titleLabel = UILabel().then {
@@ -144,6 +158,8 @@ class HomeView: UIView {
         $0.register(ChallengeCollectionViewCell.self, forCellWithReuseIdentifier: ChallengeCollectionViewCell.identifier)
     }
     
+    // ------------------------------------------------------------------------------------------------------------------------
+    
     let emptyLabel = UILabel().then {
         $0.font = .systemFont(ofSize: 16, weight: .medium)
         $0.textColor = .black
@@ -151,41 +167,50 @@ class HomeView: UIView {
         $0.isHidden = true
     }
     
+    // ------------------------------------------------------------------------------------------------------------------------
+    
     private func setupView() {
+        
+        // 스크롤 뷰 설정
         addSubview(scrollView)
         scrollView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
         
+        // 콘텐츠 뷰 설정
         scrollView.addSubview(contentView)
         contentView.snp.makeConstraints { make in
             make.edges.equalTo(scrollView)
             make.width.equalTo(scrollView.snp.width)
         }
         
+        // 스택 뷰 설정
         contentView.addSubview(stackView)
         stackView.snp.makeConstraints { make in
             make.top.equalTo(contentView)
             make.leading.trailing.bottom.equalTo(contentView).inset(10)
         }
         
+        // 상단 스택 뷰에 검색창과 알림 버튼 추가
         topStackView.addArrangedSubview(searchTextField)
         topStackView.addArrangedSubview(alarmButton)
-        
+
+        // 스택 뷰에 구성 요소 추가
         stackView.addArrangedSubview(topStackView)
         stackView.addArrangedSubview(segmentControl)
         stackView.addArrangedSubview(dividedLine)
         stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(collectionView)
-        // Just Dropped 섹션 추가
+        // ------------------------------------------------------------------------------------------------------------------------
+        // JustDropped 섹션 추가
         stackView.addArrangedSubview(justDroppedTitleLabel)
         stackView.addArrangedSubview(justDroppedSubtitleLabel)
         stackView.addArrangedSubview(justDroppedCollectionView)
-        // contentView에 추가
+        // Challenge 섹션 추가
         stackView.addArrangedSubview(titleLabel)
         stackView.addArrangedSubview(hashtagLabel)
         stackView.addArrangedSubview(challengeCollectionView)
-        
+        // ------------------------------------------------------------------------------------------------------------------------
         stackView.addArrangedSubview(emptyLabel)
         
         searchTextField.snp.makeConstraints {
@@ -210,13 +235,12 @@ class HomeView: UIView {
             $0.leading.trailing.equalToSuperview()
         }
         
-        // 컬렉션 뷰 높이를 두 줄에 맞게 조정
         collectionView.snp.makeConstraints {
             $0.leading.trailing.equalToSuperview().inset(10)
             $0.height.equalTo(200)
         }
-        
-        // 제약 조건 설정
+        // ------------------------------------------------------------------------------------------------------------------------
+        /// 제약 조건 설정
         justDroppedTitleLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().offset(10)
             make.top.equalTo(collectionView.snp.bottom).offset(10)
@@ -230,11 +254,11 @@ class HomeView: UIView {
         justDroppedCollectionView.snp.makeConstraints { make in
             make.leading.trailing.equalToSuperview()
             make.top.equalTo(justDroppedSubtitleLabel.snp.bottom).offset(15)
-            make.height.equalTo(250) // 컬렉션 뷰 높이 설정
+            make.height.equalTo(250)
         }
-        // 제약 조건 설정
+        // ------------------------------------------------------------------------------------------------------------------------
         titleLabel.snp.makeConstraints {
-            $0.top.equalTo(justDroppedCollectionView.snp.bottom).offset(10) // 이전 뷰의 아래에 배치
+            $0.top.equalTo(justDroppedCollectionView.snp.bottom).offset(10)
             $0.leading.trailing.equalToSuperview().inset(10)
         }
         
@@ -246,7 +270,8 @@ class HomeView: UIView {
         challengeCollectionView.snp.makeConstraints {
             $0.top.equalTo(hashtagLabel.snp.bottom).offset(8)
             $0.leading.trailing.equalToSuperview().inset(16)
-            $0.height.equalTo(200) // 컬렉션 뷰 높이 설정
+            $0.height.equalTo(200)
         }
+        // ------------------------------------------------------------------------------------------------------------------------
     }
 }

@@ -38,6 +38,8 @@ class HomeViewController: UIViewController {
         homeView.justDroppedCollectionView.delegate = self
         homeView.challengeCollectionView.dataSource = self
         homeView.challengeCollectionView.delegate = self
+        
+        homeView.searchTextField.delegate = self
     }
     
     /// 세그먼트 컨트롤에 의해 선택된 인덱스에 따라 표시 변경
@@ -58,24 +60,22 @@ class HomeViewController: UIViewController {
 
 /// UICollectionViewDataSource 프로토콜을 구현하여 컬렉션 뷰의 데이터 소스 설정
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    /// CollectionView에 몇개의 데이터가 들어갈지를 Int 타입의 변수로 반환하기 위해 설정
+    /// /// 각 컬렉션 뷰의 항목 개수를 반환
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //        return data.count
-        
         if collectionView == homeView.collectionView {
-            return HomeModel.homeDummyData().count // 메인 컬렉션 뷰의 데이터 수
+            return HomeModel.homeDummyData().count // Home 컬렉션 뷰의 데이터 수
         } else if collectionView == homeView.justDroppedCollectionView {
             return HomeModel.productDummyData().count // Just Dropped 컬렉션 뷰의 데이터 수
         } else if collectionView == homeView.challengeCollectionView {
-            return HomeModel.challengeDummyData().count // User Photos 컬렉션 뷰의 데이터 수
+            return HomeModel.challengeDummyData().count // Challenge 컬렉션 뷰의 데이터 수
         }
         return 0
     }
-    /// 셀 선언 후 데이터 바인딩 및 바인딩된 셀을 반환
+    /// 컬렉션 뷰 셀을 구성하고 반환
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         /// guard let 을 이용해 옵셔널 바인딩
         if collectionView == homeView.collectionView {
-            /// 메인 컬렉션 뷰 셀 설정
+            /// home 컬렉션 뷰 셀 설정
             guard let cell = collectionView.dequeueReusableCell(
                 withReuseIdentifier: HomeCollectionViewCell.identifier,
                 for: indexPath
@@ -110,7 +110,7 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
             }
             return cell
         } else if collectionView == homeView.challengeCollectionView {
-            /// User Photos 컬렉션 뷰 셀 설정
+            /// Challenge 컬렉션 뷰 셀 설정
             guard let cell = collectionView.dequeueReusableCell(
                 withReuseIdentifier: ChallengeCollectionViewCell.identifier,
                 for: indexPath
@@ -125,8 +125,9 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
         return UICollectionViewCell()
     }
 }
-
+// UITextFieldDelegate 프로토콜을 구현하여 텍스트 필드 액션을 설정
 extension HomeViewController: UITextFieldDelegate {
+    /// 검색창을 탭할 때 호출되는 메서드
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         let search = SearchViewController()
         search.modalPresentationStyle = .fullScreen

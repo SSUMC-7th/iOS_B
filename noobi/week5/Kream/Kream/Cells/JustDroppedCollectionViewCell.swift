@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 class JustDroppedCollectionViewCell : UICollectionViewCell {
+    /// 식별자 지정
     static let identifier = "JustDroppedCollectionViewCell"
     
     override init(frame: CGRect) {
@@ -20,6 +21,7 @@ class JustDroppedCollectionViewCell : UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
+    /// 구성 요소 속성 지정
     let productImageView = UIImageView().then { make in
         make.contentMode = .scaleAspectFit
         make.clipsToBounds = true
@@ -58,8 +60,7 @@ class JustDroppedCollectionViewCell : UICollectionViewCell {
         make.tintColor = .black
     }
 
-        
-
+    /// 각 구성 요소를 contentView에 추가한 후 SnapKit을 사용해 오토레이아웃을 설정
     private func setupView() {
         contentView.addSubview(productImageView)
         contentView.addSubview(transactionVolumeLabel)
@@ -106,6 +107,7 @@ class JustDroppedCollectionViewCell : UICollectionViewCell {
         }
     }
 
+    /// 셀에 데이터를 설정
     func configure(with product: ProductModel) {
         productImageView.image = product.savedImage
         brandLabel.text = product.brand
@@ -115,3 +117,6 @@ class JustDroppedCollectionViewCell : UICollectionViewCell {
         transactionVolumeLabel.text = product.transactionVolume
     }
 }
+
+/// JustDroppedCollectionView에 셀을 추가하고, configure(with:) 메서드를 호출해 각 셀에 데이터를 설정
+/// contentView는 UICollectionViewCell 클래스에 기본으로 포함된 속성

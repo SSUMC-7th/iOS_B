@@ -7,8 +7,7 @@
 
 import UIKit
 
-// 아이템의 유형을 구분하기 위한 열거형
-
+///컬렉션 뷰에서 각 항목을 보여주기 위해 기본 구조를 정의한 구조체
 struct HomeModel{
     let savedImage: UIImage
     let name: String
@@ -45,7 +44,7 @@ extension HomeModel{
         ]
     }
     
-    /// ProductCollectionView에 들어갈 dummy 데이터 추가
+    /// JustDroppedCollectionView에 들어갈 dummy 데이터 추가
     static func productDummyData() -> [ProductModel] {
         
         return [
@@ -55,6 +54,7 @@ extension HomeModel{
         ]
     }
     
+    /// ChallengeCollectionView에 들어갈 dummy 데이터 추가
     static func challengeDummyData()-> [ChallengeModel] {
         
         return [

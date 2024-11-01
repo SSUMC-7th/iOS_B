@@ -7,9 +7,18 @@
 
 import UIKit
 
-/// 
 class ChallengeCollectionViewCell: UICollectionViewCell {
+    /// 식별자 지정
     static let identifier = "ChallengeCollectionViewCell"
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     // 이미지와 이름을 표시할 UI 요소 생성
     let imageView = UIImageView().then {
@@ -24,15 +33,6 @@ class ChallengeCollectionViewCell: UICollectionViewCell {
         $0.backgroundColor = .clear
         $0.textAlignment = .left
         $0.clipsToBounds = true
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupView()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
     
     // UI 요소를 추가하고 제약 조건 설정
