@@ -132,6 +132,12 @@ class HomeView: UIView {
         return cv
     }()
     
+    // 구분 선
+    private let lineView1 = UIView().then {
+        $0.backgroundColor = .systemGray5
+    }
+
+    
     // 이미지 컬렉션 뷰 라벨
     let pictureSectionTitleLabel = UILabel().then {
         $0.text = "분위기 한파대비! 연말 필수템 모음"
@@ -181,7 +187,7 @@ class HomeView: UIView {
         
         [searchTextField, notificationButton, segmentedControl, underlineView,
          segmentedImageView, emptyView, topCollectionView, lineView, justDroppedLabel,
-         justDroppedLabelInfo, bottomCollectionView, pictureSectionTitleLabel, pictureSectionSubtitleLabel,
+         justDroppedLabelInfo, bottomCollectionView, lineView1, pictureSectionTitleLabel, pictureSectionSubtitleLabel,
          pictureCollectionView].forEach {      contentView.addSubview($0) }
                 
         setupConstraints()
@@ -276,7 +282,7 @@ class HomeView: UIView {
         }
         
         // 구분선 설정
-        lineView.snp.makeConstraints {
+        lineView1.snp.makeConstraints {
             $0.top.equalTo(bottomCollectionView.snp.bottom).offset(20)
             $0.leading.trailing.equalToSuperview()  // 화면 전체 너비
             $0.height.equalTo(1)  // 높이 1포인트
