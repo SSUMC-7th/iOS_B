@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
         loginView.kakaoLoginButton.addTarget(self, action: #selector(didTapKakaoLoginButton), for: .touchUpInside)
         
         // 카카오 로그인 후에 액세스 토큰을 가져온 후 사용자 정보 요청
-        let accessToken = "ACCESS_TOKEN" // Kakao SDK를 통해 얻은 액세스 토큰
+        let accessToken = "b0-gPDlabfwglY-l8oPfbFC9FyRbC74tAAAAAQorDSAAAAGTJfGTT1XuKbObXTiX" // Kakao SDK를 통해 얻은 액세스 토큰
         kakaoAPIManager.requestKakaoUserInfo(accessToken: accessToken)
     }
     
@@ -74,7 +74,7 @@ class LoginViewController: UIViewController {
         present(mainpageViewController, animated: true, completion: nil)
     }
     
-    @IBAction func didTapKakaoLoginButton(_ sender: UIButton) {
+    @objc func didTapKakaoLoginButton(_ sender: UIButton) {
         
         //카카오톡 실행 가능 여부 확인 후 로그인
         if (UserApi.isKakaoTalkLoginAvailable()) {
@@ -86,18 +86,12 @@ class LoginViewController: UIViewController {
                 } else if let oauthToken = oauthToken {
                     print("loginWithKakaoTalk() success.")
                     
-                    // do something
                     _ = oauthToken
-                    // 어세스토큰
-                    // let accessToken = oauthToken?.accessToken
-                    // 액세스 토큰 가져오기
                     
+                    // 액세스 토큰 가져오기
                     let accessToken = oauthToken.accessToken
                     // KakaoAPIManager를 통해 사용자 정보 요청
                     self.kakaoAPIManager.requestKakaoUserInfo(accessToken: accessToken)
-                    
-                    
-//                    self.setUserInfo()
                     
                     // 로그인 성공 시 메인 TabBarController로 전환
                     // Modal 방식
@@ -117,16 +111,13 @@ class LoginViewController: UIViewController {
                 else if let oauthToken = oauthToken {
                     print("loginWithKakaoAccount() success.")
                     
-                    //do something
                     _ = oauthToken
-                    // 어세스토큰
+                    
+                    // 액세스 토큰 가져오기
                     let accessToken = oauthToken.accessToken
                     
                     // KakaoAPIManager를 통해 사용자 정보 요청
                     self.kakaoAPIManager.requestKakaoUserInfo(accessToken: accessToken)
-                    
-                    //카카오 로그인을 통해 사용자 토큰을 발급 받은 후 사용자 관리 API 호출
-//                    self.setUserInfo()
                     
                     // 로그인 성공 시 메인 TabBarController로 전환
                     // Modal 방식
