@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		072A7E872CDC91F6005574A1 /* ProductDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A7E862CDC91F6005574A1 /* ProductDetailInfoView.swift */; };
+		072A7E892CDC95F1005574A1 /* ProductDetailInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A7E882CDC95F1005574A1 /* ProductDetailInfoModel.swift */; };
+		072A7E8B2CDC9AC6005574A1 /* ProductImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A7E8A2CDC9AC6005574A1 /* ProductImageCell.swift */; };
+		072A7E8D2CDC9E8D005574A1 /* ProductDetailInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A7E8C2CDC9E8D005574A1 /* ProductDetailInfoViewController.swift */; };
+		072A7E8F2CDCAC46005574A1 /* BuySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A7E8E2CDCAC46005574A1 /* BuySheetView.swift */; };
+		072A7E912CDCF3DE005574A1 /* BuySheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A7E902CDCF3DE005574A1 /* BuySheetViewController.swift */; };
+		072A7E942CDD0AD5005574A1 /* ProductDetailNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A7E932CDD0AD5005574A1 /* ProductDetailNavigationManager.swift */; };
+		072A7E962CDD0AE5005574A1 /* ProductImageCollectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A7E952CDD0AE5005574A1 /* ProductImageCollectionManager.swift */; };
+		072A7E982CDD0AF4005574A1 /* BuySheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072A7E972CDD0AF4005574A1 /* BuySheetManager.swift */; };
+		0730A59E2CB3FD2E0011809F /* SavedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730A59D2CB3FD2E0011809F /* SavedModels.swift */; };
+		0730A5A02CB400440011809F /* SavedItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730A59F2CB400440011809F /* SavedItemsCell.swift */; };
+		0730A5A22CB401ED0011809F /* SavedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730A5A12CB401ED0011809F /* SavedImageView.swift */; };
+		078D5E732CD3DE9500801752 /* JustDroppedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078D5E722CD3DE9500801752 /* JustDroppedCollectionViewCell.swift */; };
+		078D5E752CD3EFAE00801752 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078D5E742CD3EFAE00801752 /* ProductCollectionViewCell.swift */; };
+		078D5E772CD3F1D500801752 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078D5E762CD3F1D500801752 /* ProductModel.swift */; };
+		078D5E792CD40CA700801752 /* PictureCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078D5E782CD40CA700801752 /* PictureCollectionViewCell.swift */; };
+		078D5E7B2CD40CC100801752 /* PictureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078D5E7A2CD40CC100801752 /* PictureModel.swift */; };
+		0793A4382CA543BC0044E622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0793A4332CA543BC0044E622 /* Assets.xcassets */; };
+		0793A43A2CA543BC0044E622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4322CA543BC0044E622 /* AppDelegate.swift */; };
+		0793A43B2CA543BC0044E622 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4352CA543BC0044E622 /* SceneDelegate.swift */; };
+		0793A43C2CA543BC0044E622 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4362CA543BC0044E622 /* LoginViewController.swift */; };
+		0793A4412CA545D60044E622 /* LoginModel.swift .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4402CA545D60044E622 /* LoginModel.swift .swift */; };
+		0793A4472CA5468A0044E622 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0793A4462CA5468A0044E622 /* LoginView.swift */; };
+		07C306762CE611E700198F45 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 07C306752CE611E700198F45 /* Alamofire */; };
+		07C3068F2CE6154100198F45 /* KakaoLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3068E2CE6154100198F45 /* KakaoLoginModel.swift */; };
+		07C306922CE6156F00198F45 /* KeychainManager.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C306912CE6156F00198F45 /* KeychainManager.swift.swift */; };
+		07C306942CE6158500198F45 /* KakaoAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C306932CE6158500198F45 /* KakaoAuthService.swift */; };
+		07D2262A2CB80BE600A27FF7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D226292CB80BE600A27FF7 /* HomeView.swift */; };
+		07D2262D2CB80EE700A27FF7 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 07D2262C2CB80EE700A27FF7 /* Then */; };
+		07D2262F2CB8106C00A27FF7 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D2262E2CB8106C00A27FF7 /* HomeModel.swift */; };
+		07D226312CB81D2600A27FF7 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D226302CB81D2600A27FF7 /* HomeCollectionViewCell.swift */; };
+		07D226352CB848D600A27FF7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D226342CB848D600A27FF7 /* SearchView.swift */; };
+		07D226372CB8497D00A27FF7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D226362CB8497D00A27FF7 /* SearchViewController.swift */; };
+		07D454902CAEE128009FD782 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D4548F2CAEE128009FD782 /* BaseViewController.swift */; };
+		07D454922CAEE4C2009FD782 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454912CAEE4C2009FD782 /* HomeViewController.swift */; };
+		07D454942CAEE4DC009FD782 /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454932CAEE4DC009FD782 /* StyleViewController.swift */; };
+		07D454962CAEE533009FD782 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454952CAEE533009FD782 /* ShopViewController.swift */; };
+		07D454982CAEE540009FD782 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454972CAEE540009FD782 /* SavedViewController.swift */; };
+		07D4549A2CAEE549009FD782 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454992CAEE549009FD782 /* MyViewController.swift */; };
+		07D4549D2CAEE666009FD782 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 07D4549C2CAEE666009FD782 /* SnapKit */; };
+		07D4549F2CAEF428009FD782 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D4549E2CAEF428009FD782 /* MyView.swift */; };
+		07D454A92CAF037D009FD782 /* profileManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454A82CAF037D009FD782 /* profileManageViewController.swift */; };
+		07D454AB2CAF0387009FD782 /* ProfileManageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D454AA2CAF0387009FD782 /* ProfileManageView.swift */; };
+		9C17E70CFAFB189980BE0E58 /* Pods_Kream_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72018AFE10396AA1D3263E48 /* Pods_Kream_demo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		072A7E862CDC91F6005574A1 /* ProductDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailInfoView.swift; sourceTree = "<group>"; };
+		072A7E882CDC95F1005574A1 /* ProductDetailInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailInfoModel.swift; sourceTree = "<group>"; };
+		072A7E8A2CDC9AC6005574A1 /* ProductImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageCell.swift; sourceTree = "<group>"; };
+		072A7E8C2CDC9E8D005574A1 /* ProductDetailInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailInfoViewController.swift; sourceTree = "<group>"; };
+		072A7E8E2CDCAC46005574A1 /* BuySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySheetView.swift; sourceTree = "<group>"; };
+		072A7E902CDCF3DE005574A1 /* BuySheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySheetViewController.swift; sourceTree = "<group>"; };
+		072A7E932CDD0AD5005574A1 /* ProductDetailNavigationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailNavigationManager.swift; sourceTree = "<group>"; };
+		072A7E952CDD0AE5005574A1 /* ProductImageCollectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageCollectionManager.swift; sourceTree = "<group>"; };
+		072A7E972CDD0AF4005574A1 /* BuySheetManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySheetManager.swift; sourceTree = "<group>"; };
+		0730A59D2CB3FD2E0011809F /* SavedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedModels.swift; sourceTree = "<group>"; };
+		0730A59F2CB400440011809F /* SavedItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemsCell.swift; sourceTree = "<group>"; };
+		0730A5A12CB401ED0011809F /* SavedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedImageView.swift; sourceTree = "<group>"; };
+		078CC6E82CA54216003C83D8 /* Kream_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kream_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		078D5E722CD3DE9500801752 /* JustDroppedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustDroppedCollectionViewCell.swift; sourceTree = "<group>"; };
+		078D5E742CD3EFAE00801752 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		078D5E762CD3F1D500801752 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		078D5E782CD40CA700801752 /* PictureCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCollectionViewCell.swift; sourceTree = "<group>"; };
+		078D5E7A2CD40CC100801752 /* PictureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureModel.swift; sourceTree = "<group>"; };
+		0793A4322CA543BC0044E622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0793A4332CA543BC0044E622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0793A4342CA543BC0044E622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0793A4352CA543BC0044E622 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0793A4362CA543BC0044E622 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0793A4402CA545D60044E622 /* LoginModel.swift .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginModel.swift .swift"; sourceTree = "<group>"; };
+		0793A4462CA5468A0044E622 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		07C3068E2CE6154100198F45 /* KakaoLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoLoginModel.swift; sourceTree = "<group>"; };
+		07C306912CE6156F00198F45 /* KeychainManager.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift.swift; sourceTree = "<group>"; };
+		07C306932CE6158500198F45 /* KakaoAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAuthService.swift; sourceTree = "<group>"; };
+		07D226292CB80BE600A27FF7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		07D2262E2CB8106C00A27FF7 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		07D226302CB81D2600A27FF7 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		07D226342CB848D600A27FF7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		07D226362CB8497D00A27FF7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		07D4548F2CAEE128009FD782 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		07D454912CAEE4C2009FD782 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		07D454932CAEE4DC009FD782 /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
+		07D454952CAEE533009FD782 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		07D454972CAEE540009FD782 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		07D454992CAEE549009FD782 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		07D4549E2CAEF428009FD782 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		07D454A82CAF037D009FD782 /* profileManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileManageViewController.swift; sourceTree = "<group>"; };
+		07D454AA2CAF0387009FD782 /* ProfileManageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManageView.swift; sourceTree = "<group>"; };
+		72018AFE10396AA1D3263E48 /* Pods_Kream_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kream_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72884DAEFD4FD735BB2022C7 /* Pods-Kream_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kream_demo.release.xcconfig"; path = "Target Support Files/Pods-Kream_demo/Pods-Kream_demo.release.xcconfig"; sourceTree = "<group>"; };
+		86213A18D70B27886993F855 /* Pods-Kream_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kream_demo.debug.xcconfig"; path = "Target Support Files/Pods-Kream_demo/Pods-Kream_demo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		078CC6E52CA54216003C83D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C306762CE611E700198F45 /* Alamofire in Frameworks */,
+				07D4549D2CAEE666009FD782 /* SnapKit in Frameworks */,
+				07D2262D2CB80EE700A27FF7 /* Then in Frameworks */,
+				9C17E70CFAFB189980BE0E58 /* Pods_Kream_demo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		072A7E922CDD0ABA005574A1 /* ProductDeatil */ = {
+			isa = PBXGroup;
+			children = (
+				072A7E8C2CDC9E8D005574A1 /* ProductDetailInfoViewController.swift */,
+				072A7E902CDCF3DE005574A1 /* BuySheetViewController.swift */,
+				072A7E932CDD0AD5005574A1 /* ProductDetailNavigationManager.swift */,
+				072A7E952CDD0AE5005574A1 /* ProductImageCollectionManager.swift */,
+				072A7E972CDD0AF4005574A1 /* BuySheetManager.swift */,
+			);
+			path = ProductDeatil;
+			sourceTree = "<group>";
+		};
+		0730A59C2CB3FC850011809F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0730A59F2CB400440011809F /* SavedItemsCell.swift */,
+				07D226302CB81D2600A27FF7 /* HomeCollectionViewCell.swift */,
+				078D5E722CD3DE9500801752 /* JustDroppedCollectionViewCell.swift */,
+				078D5E742CD3EFAE00801752 /* ProductCollectionViewCell.swift */,
+				078D5E782CD40CA700801752 /* PictureCollectionViewCell.swift */,
+				072A7E8A2CDC9AC6005574A1 /* ProductImageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		078CC6DF2CA54216003C83D8 = {
+			isa = PBXGroup;
+			children = (
+				0793A4372CA543BC0044E622 /* Kream_demo */,
+				078CC6E92CA54216003C83D8 /* Products */,
+				25BD550F1ACDA0F82AE243DB /* Pods */,
+				1F9F764FD1654A8FC81DF3F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		078CC6E92CA54216003C83D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				078CC6E82CA54216003C83D8 /* Kream_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0793A4372CA543BC0044E622 /* Kream_demo */ = {
+			isa = PBXGroup;
+			children = (
+				07C306902CE6156100198F45 /* Services */,
+				0730A59C2CB3FC850011809F /* Cells */,
+				0793A43D2CA545980044E622 /* Models */,
+				0793A43E2CA545C10044E622 /* Views */,
+				0793A43F2CA545C50044E622 /* ViewControllers */,
+				0793A4322CA543BC0044E622 /* AppDelegate.swift */,
+				0793A4332CA543BC0044E622 /* Assets.xcassets */,
+				0793A4342CA543BC0044E622 /* Info.plist */,
+				0793A4352CA543BC0044E622 /* SceneDelegate.swift */,
+			);
+			path = Kream_demo;
+			sourceTree = "<group>";
+		};
+		0793A43D2CA545980044E622 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0793A4402CA545D60044E622 /* LoginModel.swift .swift */,
+				0730A59D2CB3FD2E0011809F /* SavedModels.swift */,
+				07D2262E2CB8106C00A27FF7 /* HomeModel.swift */,
+				078D5E762CD3F1D500801752 /* ProductModel.swift */,
+				078D5E7A2CD40CC100801752 /* PictureModel.swift */,
+				072A7E882CDC95F1005574A1 /* ProductDetailInfoModel.swift */,
+				07C3068E2CE6154100198F45 /* KakaoLoginModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0793A43E2CA545C10044E622 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0793A4462CA5468A0044E622 /* LoginView.swift */,
+				07D4549E2CAEF428009FD782 /* MyView.swift */,
+				07D454AA2CAF0387009FD782 /* ProfileManageView.swift */,
+				0730A5A12CB401ED0011809F /* SavedImageView.swift */,
+				07D226292CB80BE600A27FF7 /* HomeView.swift */,
+				07D226342CB848D600A27FF7 /* SearchView.swift */,
+				072A7E862CDC91F6005574A1 /* ProductDetailInfoView.swift */,
+				072A7E8E2CDCAC46005574A1 /* BuySheetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0793A43F2CA545C50044E622 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				07D4548F2CAEE128009FD782 /* BaseViewController.swift */,
+				072A7E922CDD0ABA005574A1 /* ProductDeatil */,
+				07D226282CB7FA4A00A27FF7 /* MyView */,
+				07D226262CB7FA2C00A27FF7 /* Login */,
+				07D454912CAEE4C2009FD782 /* HomeViewController.swift */,
+				07D454932CAEE4DC009FD782 /* StyleViewController.swift */,
+				07D454952CAEE533009FD782 /* ShopViewController.swift */,
+				07D454972CAEE540009FD782 /* SavedViewController.swift */,
+				07D226362CB8497D00A27FF7 /* SearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		07C306902CE6156100198F45 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				07C306912CE6156F00198F45 /* KeychainManager.swift.swift */,
+				07C306932CE6158500198F45 /* KakaoAuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		07D226262CB7FA2C00A27FF7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0793A4362CA543BC0044E622 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		07D226282CB7FA4A00A27FF7 /* MyView */ = {
+			isa = PBXGroup;
+			children = (
+				07D454992CAEE549009FD782 /* MyViewController.swift */,
+				07D454A82CAF037D009FD782 /* profileManageViewController.swift */,
+			);
+			path = MyView;
+			sourceTree = "<group>";
+		};
+		1F9F764FD1654A8FC81DF3F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72018AFE10396AA1D3263E48 /* Pods_Kream_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		25BD550F1ACDA0F82AE243DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86213A18D70B27886993F855 /* Pods-Kream_demo.debug.xcconfig */,
+				72884DAEFD4FD735BB2022C7 /* Pods-Kream_demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		078CC6E72CA54216003C83D8 /* Kream_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078CC6FB2CA54218003C83D8 /* Build configuration list for PBXNativeTarget "Kream_demo" */;
+			buildPhases = (
+				0151D091BC6DFB3B56E12780 /* [CP] Check Pods Manifest.lock */,
+				078CC6E42CA54216003C83D8 /* Sources */,
+				078CC6E52CA54216003C83D8 /* Frameworks */,
+				078CC6E62CA54216003C83D8 /* Resources */,
+				945FC400481C041570C9A30E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kream_demo;
+			packageProductDependencies = (
+				07D4549C2CAEE666009FD782 /* SnapKit */,
+				07D2262C2CB80EE700A27FF7 /* Then */,
+				07C306752CE611E700198F45 /* Alamofire */,
+			);
+			productName = Kream_demo;
+			productReference = 078CC6E82CA54216003C83D8 /* Kream_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		078CC6E02CA54216003C83D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					078CC6E72CA54216003C83D8 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 078CC6E32CA54216003C83D8 /* Build configuration list for PBXProject "Kream_demo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 078CC6DF2CA54216003C83D8;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				07D4549B2CAEE666009FD782 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				07D2262B2CB80EE700A27FF7 /* XCRemoteSwiftPackageReference "Then" */,
+				07C306742CE611E700198F45 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 078CC6E92CA54216003C83D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				078CC6E72CA54216003C83D8 /* Kream_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		078CC6E62CA54216003C83D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0793A4382CA543BC0044E622 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0151D091BC6DFB3B56E12780 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kream_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		945FC400481C041570C9A30E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kream_demo/Pods-Kream_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kream_demo/Pods-Kream_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kream_demo/Pods-Kream_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		078CC6E42CA54216003C83D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				072A7E982CDD0AF4005574A1 /* BuySheetManager.swift in Sources */,
+				07D4549F2CAEF428009FD782 /* MyView.swift in Sources */,
+				072A7E892CDC95F1005574A1 /* ProductDetailInfoModel.swift in Sources */,
+				072A7E872CDC91F6005574A1 /* ProductDetailInfoView.swift in Sources */,
+				0793A43A2CA543BC0044E622 /* AppDelegate.swift in Sources */,
+				0730A5A22CB401ED0011809F /* SavedImageView.swift in Sources */,
+				0793A43B2CA543BC0044E622 /* SceneDelegate.swift in Sources */,
+				07D2262F2CB8106C00A27FF7 /* HomeModel.swift in Sources */,
+				07C306942CE6158500198F45 /* KakaoAuthService.swift in Sources */,
+				07D454AB2CAF0387009FD782 /* ProfileManageView.swift in Sources */,
+				072A7E942CDD0AD5005574A1 /* ProductDetailNavigationManager.swift in Sources */,
+				0730A5A02CB400440011809F /* SavedItemsCell.swift in Sources */,
+				07D454962CAEE533009FD782 /* ShopViewController.swift in Sources */,
+				0793A43C2CA543BC0044E622 /* LoginViewController.swift in Sources */,
+				0793A4472CA5468A0044E622 /* LoginView.swift in Sources */,
+				078D5E752CD3EFAE00801752 /* ProductCollectionViewCell.swift in Sources */,
+				07D226352CB848D600A27FF7 /* SearchView.swift in Sources */,
+				07C306922CE6156F00198F45 /* KeychainManager.swift.swift in Sources */,
+				07D2262A2CB80BE600A27FF7 /* HomeView.swift in Sources */,
+				07D226372CB8497D00A27FF7 /* SearchViewController.swift in Sources */,
+				07D454A92CAF037D009FD782 /* profileManageViewController.swift in Sources */,
+				072A7E8B2CDC9AC6005574A1 /* ProductImageCell.swift in Sources */,
+				072A7E8F2CDCAC46005574A1 /* BuySheetView.swift in Sources */,
+				07D454942CAEE4DC009FD782 /* StyleViewController.swift in Sources */,
+				07D4549A2CAEE549009FD782 /* MyViewController.swift in Sources */,
+				072A7E8D2CDC9E8D005574A1 /* ProductDetailInfoViewController.swift in Sources */,
+				0730A59E2CB3FD2E0011809F /* SavedModels.swift in Sources */,
+				078D5E7B2CD40CC100801752 /* PictureModel.swift in Sources */,
+				07D226312CB81D2600A27FF7 /* HomeCollectionViewCell.swift in Sources */,
+				07C3068F2CE6154100198F45 /* KakaoLoginModel.swift in Sources */,
+				078D5E772CD3F1D500801752 /* ProductModel.swift in Sources */,
+				0793A4412CA545D60044E622 /* LoginModel.swift .swift in Sources */,
+				072A7E962CDD0AE5005574A1 /* ProductImageCollectionManager.swift in Sources */,
+				078D5E792CD40CA700801752 /* PictureCollectionViewCell.swift in Sources */,
+				07D454922CAEE4C2009FD782 /* HomeViewController.swift in Sources */,
+				072A7E912CDCF3DE005574A1 /* BuySheetViewController.swift in Sources */,
+				07D454982CAEE540009FD782 /* SavedViewController.swift in Sources */,
+				078D5E732CD3DE9500801752 /* JustDroppedCollectionViewCell.swift in Sources */,
+				07D454902CAEE128009FD782 /* BaseViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		078CC6FC2CA54218003C83D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86213A18D70B27886993F855 /* Pods-Kream_demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBVZV8T99P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kream_demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-Xlinker",
+					"-interposable",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.soongsil.cs.20213583.Kream-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		078CC6FD2CA54218003C83D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72884DAEFD4FD735BB2022C7 /* Pods-Kream_demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBVZV8T99P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kream_demo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.soongsil.cs.20213583.Kream-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		078CC6FE2CA54218003C83D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		078CC6FF2CA54218003C83D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		078CC6E32CA54216003C83D8 /* Build configuration list for PBXProject "Kream_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078CC6FE2CA54218003C83D8 /* Debug */,
+				078CC6FF2CA54218003C83D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078CC6FB2CA54218003C83D8 /* Build configuration list for PBXNativeTarget "Kream_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078CC6FC2CA54218003C83D8 /* Debug */,
+				078CC6FD2CA54218003C83D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07C306742CE611E700198F45 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+		07D2262B2CB80EE700A27FF7 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		07D4549B2CAEE666009FD782 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07C306752CE611E700198F45 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07C306742CE611E700198F45 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		07D2262C2CB80EE700A27FF7 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07D2262B2CB80EE700A27FF7 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		07D4549C2CAEE666009FD782 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07D4549B2CAEE666009FD782 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 078CC6E02CA54216003C83D8 /* Project object */;
+}
