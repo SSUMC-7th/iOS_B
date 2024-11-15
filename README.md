@@ -1,4 +1,4 @@
-# iOS A
+# iOS B
 
 SSUMC 7기 iOS 스터디 B조
 
