@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
         
         loginView.loginButton.addTarget(self, action: #selector(loginButtonClicked), for: .touchUpInside)
         
-        // 카카오톡 로그인 버튼
+        // 카카오톡 로그인 버튼 액션 추가
         loginView.kakaoLoginButton.addTarget(self, action: #selector(kakaoLoginButtonTapped), for: .touchUpInside)
         
         if let savedEmail = UserDefaults.standard.string(forKey: "savedEmail"),
@@ -47,6 +47,7 @@ class LoginViewController: UIViewController {
         self.present(baseVC, animated: true, completion: nil)
     }
     
+    // 카카톡 버튼!
     @objc private func kakaoLoginButtonTapped() {
         print("카카오 로그인 버튼 탭")
         KakaoAuthService.shared.handleKakaoLogin { [weak self] result in

@@ -39,9 +39,28 @@ class KakaoAuthService {
                 
                 if let token = oauthToken {
                     print("카카오 계정 로그인 성공, 토큰: \(token.accessToken)")
+                    self?.saveToken(token)
                     self?.getUserInfo(completion: completion)
                 }
             }
+        }
+    }
+    
+    // 액세스 토큰 저장
+    private func saveToken(_ token: OAuthToken) {
+        let accessTokenSaveResult = KeychainManager.shared.save(key: "kakaoAccessToken", value: token.accessToken)
+        if accessTokenSaveResult == errSecSuccess {
+            print("액세스 토큰 저장 성공")
+        } else {
+            print("액세스 토큰 저장 실패.. : \(accessTokenSaveResult)")
+        }
+        
+        // 리프레시 토큰 저장
+        let refreshTokenSaveResult = KeychainManager.shared.save(key: "kakaoRefreshToken", value: token.refreshToken)
+        if refreshTokenSaveResult == errSecSuccess {
+            print("리프레시 토큰 저장 성공")
+        } else {
+            print("리프레시 토큰 저장 실패.. : \(refreshTokenSaveResult)")
         }
     }
     
